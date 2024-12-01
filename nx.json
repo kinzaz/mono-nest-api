@@ -35,7 +35,7 @@
       "options": {
         "targetName": "test"
       },
-      "exclude": ["apps/mono-nest-api-e2e/**/*"]
+      "exclude": ["apps/account-e2e/**/*"]
     }
   ]
 }
