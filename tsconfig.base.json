@@ -13,8 +13,10 @@
     "lib": ["es2020", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
+        "strictPropertyInitialization": false,
     "baseUrl": ".",
     "paths": {
+      "@my-workspace/contracts": ["libs/contracts/src/index.ts"],
       "@my-workspace/interfaces": ["libs/interfaces/src/index.ts"]
     }
   },
