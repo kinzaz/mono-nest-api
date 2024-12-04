@@ -18,9 +18,22 @@ export class UserRepository {
     });
   }
 
+  async findUserById(id: number) {
+    return this.prismaService.userModel.findFirst({
+      where: { id },
+    });
+  }
+
   async deleteUser(email: string) {
     return this.prismaService.userModel.delete({
       where: { email },
+    });
+  }
+
+  async updateUser(user: UserEntity, id: number) {
+    return this.prismaService.userModel.update({
+      data: user,
+      where: { id },
     });
   }
 }
