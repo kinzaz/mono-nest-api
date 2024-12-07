@@ -8,4 +8,5 @@ export enum PurchaseState {
 export interface IUserCourses {
   courseId: number;
   purchaseState: PurchaseState;
+  userId: number;
 }

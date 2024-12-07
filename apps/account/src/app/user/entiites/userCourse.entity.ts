@@ -1,15 +1,14 @@
 import { IUserCourses, PurchaseState } from '@my-workspace/interfaces';
-import { UserEntity } from './user.entity';
 
 export class UserCoursesEntity implements IUserCourses {
   courseId: number;
   purchaseState: PurchaseState;
-  user: UserEntity;
+  userId: number;
 
-  constructor(userCourses: IUserCourses, user: UserEntity) {
+  constructor(userCourses: IUserCourses) {
     this.courseId = userCourses.courseId;
     this.purchaseState = userCourses.purchaseState;
-    this.user = user;
+    this.userId = userCourses.userId;
   }
 
   public setPurchaseState(state: PurchaseState) {
